@@ -75,3 +75,8 @@ MAIL_PASSWORD=
 MAIL_ENCRYPTION=
 MAIL_FROM_NAME=
 ```
+
+### Start the serve
+```bash
+php artisan serve
+```
