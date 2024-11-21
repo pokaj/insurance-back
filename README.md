@@ -5,7 +5,7 @@ This project is built using the [Laravel](https://laravel.com/) PHP framework. I
 
 ### Features Implemented
 - **User Authentication**: Users can register, log in, and log out. Authentication was implemented with Laravel Sanctum
-- **CRUD Operations for Policies**: Support for create, read, update, and delete operations on Policies.
+- **CRUD Operations for Policies**: Support for create, read, update, and delete, filtering and searching operations on Policies.
 - **CORS Support**: Configured CORS to allow frontend (Angular) to communicate with the backend API.
 - **Middleware**: Custom middleware to handle permissions, user authentication and route protection.
 - **Email Notifications**: Support for sending emails to admin based on the expiring date of policies
