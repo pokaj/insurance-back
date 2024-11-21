@@ -19,7 +19,6 @@ class AuthController extends Controller
             $validatedData = $this->validateUserData($request);
             $validatedData['role'] = Role::Agent->value;
             $user = User::create($validatedData);
-            Auth::login($user);
             return $this->success([
                 'user' => $user,
                 'token' => $user->createToken('API Token of '. $user->name)->plainTextToken,
@@ -37,7 +36,6 @@ class AuthController extends Controller
                 return $this->error( 401, 'wrong credentials');
             }
             $user = User::where('email', $request->email)->first();
-            Auth::login($user);
             return $this->success([
                 'user' => $user,
                 'token' => $user->createToken('API Token of '. $user->name)->plainTextToken,
